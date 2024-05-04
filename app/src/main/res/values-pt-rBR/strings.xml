@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ites22032024</string>
+    <string name="volver">voltar ao menu</string>
+    <string name="salir_al_login">sair da sessão</string>
+    <string name="Acercade">sobre o programador</string>
+    <string name="Salir">ir para</string>
+    <string name="Ingresar">Entrar</string>
+    <string name="ingrse_su_usuario">Digite seu nome de usuário</string>
+    <string name="ingrese_su_contrase_a">Digite sua senha</string>
+    <string name="Llamar">Ligue para o programador</string>
+    <string name="enviar_correo">Enviar um e-mail para o programador</string>
+    <string name="datos_del_programador">Dados do programador</string>
+    <string name="nuestros_productos">Nossos produtos:</string>
+</resources>

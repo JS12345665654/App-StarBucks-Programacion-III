@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CuartaActivity"
+    android:background="#00643C">
+    <ImageView
+        android:id="@+id/imgprogramador"
+        android:layout_width="264dp"
+        android:layout_height="233dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtgithub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnvolverterceractivity"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/foto" />
+
+    <TextView
+        android:id="@+id/txtgithub"
+        android:layout_width="251dp"
+        android:layout_height="37dp"
+        android:text="Github:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtmostrargithub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgprogramador"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtmostrargithub"
+        android:layout_width="374dp"
+        android:layout_height="39dp"
+        android:text="https://github.com/JS12345665654"
+        android:textColor="#F6EEEE"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtlinkednl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtgithub"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtterceractivitydatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datos_del_programador"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgprogramador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnvolverterceractivity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <Button
+        android:id="@+id/btnvolverterceractivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="volversegundaactivity"
+        android:text="@string/volver"
+        app:layout_constraintBottom_toTopOf="@+id/imgprogramador"
+        app:layout_constraintEnd_toStartOf="@+id/txtterceractivitydatos"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnsalirdesesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salir_al_login"
+        android:onClick="volverloginterceraactivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmostrarlinkednl"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtlinkednl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="Linkedl: "
+        android:textColor="#F6F2F2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtmostrarlinkednl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmostrargithub"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/txtmostrarlinkednl"
+        android:layout_width="359dp"
+        android:layout_height="39dp"
+        android:text="https://www.linkedin.com/in/joaqu%C3%ADn-sober%C3%B3n-5797b2180/"
+        android:textColor="#EFECEC"
+        app:layout_constraintBottom_toTopOf="@+id/btnsalirdesesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtlinkednl"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
